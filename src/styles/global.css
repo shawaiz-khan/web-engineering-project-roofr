@@ -1,0 +1,51 @@
+/*
+    Things Styles in this file:
+        1. body
+        2. button (primary and outline)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+:root {
+    --color-light: #f4f4f4;
+    --color-dark: #121212;
+    --color-accent: #8254F8;
+    --color-accent-hover: #703BF7;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    color: var(--color-light);
+    background-color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+}
+
+.button-outline {
+    background-color: transparent;
+    color: var(--color-accent)
+}
+
+.button-outline:hover {
+    background-color: var(--color-accent-hover);
+    color: var(--color-light);
+}
