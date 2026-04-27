@@ -3,6 +3,8 @@
         1. body
         2. button (primary and outline)
         3. input
+        4. form
+        5. label
 */
 
 * {
@@ -28,7 +30,7 @@ body {
 
 body {
     background-color: var(--color-light);
-    color: var(--color-dark)
+    color: var(--color-dark);
 }
 
 button {
@@ -63,6 +65,8 @@ button:hover {
 
 a {
     text-decoration: none;
+    color: var(--color-dark);
+    cursor: pointer;
 }
 
 input {
@@ -76,4 +80,91 @@ input {
 
 input:focus {
     border-color: var(--color-accent);
+}
+
+
+.form-cta-text {
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+label {
+    color: var(--color-dark)
+}
+
+.form-main-container {
+    background-color: var(--color-light-surface);
+    color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 1rem;
+    border: 1px solid var(--color-shadow);
+    max-width: 30rem;
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-inputs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: start;
+    align-items: start;
+}
+
+.form-input-label-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    width: 100%;
+}
+
+.form-inputs-container a {
+    width: 100%;
+    text-align: end;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button-container button {
+    width: 100%;
+}
+
+.form-cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    width: 100%;
+}
+
+.form-multi-input-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
